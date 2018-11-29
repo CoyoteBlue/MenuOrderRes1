@@ -1,0 +1,155 @@
+<h1>Customer Details</h1>
+<p>Customer Details - Add, Edit or Delete customer details</p>
+
+
+<!--Card image-->
+
+<!--/Card image-->
+
+<div class="row well">
+		<button type="button" class="btn btn-primary" ng-click="addRecord()">Add Customer</button>
+</div>
+
+<table class="rwd-table" > <!-- | customerfilter: 'id' -->
+    <tr>
+<!--        <th>Id</th> -->
+        <th>Name</th>
+        <th>Address 1</th>
+        <th>Address 2</th>
+        <th>City</th>
+        <th>Occupation</th>
+        <th>Phone</th>
+    </tr>
+    <tr *ngFor="let customers of customers">
+<!--        <td data-th="Id">{{customers.id}}</td> -->
+        <td data-th="Name">{{customers.name}}</td>
+        <td data-th="Address 1">{{customers.address1}}</td>
+        <td data-th="Address 2">{{customers.address2}}</td>
+        <td data-th="City">{{customers.city}}</td>
+        <td data-th="Occupation">{{customers.occupation}}</td>
+        <td data-th="Phone">{{customers.phone}}</td>
+        <td>
+          <button type="button" class="btn btn-primary">Edit</button>
+          <button type="button" class="btn btn-danger" click="deleteCustomers()">Delete</button>
+        </td>
+    </tr>
+    <tr>
+<!--        <th>Id</th> -->
+        <th>Name</th>
+        <th>Address 1</th>
+        <th>Address 2</th>
+        <th>City</th>
+        <th>Occupation</th>
+        <th>Phone</th>
+    </tr>
+</table>
+
+<br /><br />
+
+
+
+<!--This is HTML
+
+<table width="100%" border="1" id="printTable">
+    <tr><td>Code</td><td>xxxxx</td></tr>
+    <tr bgcolor="#CCCCCC"><td>Student Name</td><td>XXXX</td></tr>
+    <tr><td>Student Email</td><td>xxxx</td></tr>
+</table>
+<br>
+    <button class="btn btn-primary">Print</button> -->
+
+<!-- this is javascript
+
+ <script>
+    function printData()
+{
+   var divToPrint=document.getElementById("printTable");
+   newWin= window.open("");
+   newWin.document.write(divToPrint.outerHTML);
+   newWin.print();
+   newWin.close();
+}
+
+$('button').on('click',function(){
+printData();
+})
+    </script> -->
+
+
+
+<!-- class="table table-striped table-bordered" style="width:100%"--->
+<!-- <div>
+    <table role="table" class="table table-striped table-bordered table-dark table-hover" style="width:100%">
+        <thead role="rowgroup">
+            <tr class="d-flex">
+                <th role="columnheader" class="col-xs-6 col-md-2">Name</th>
+                <th role="columnheader" class="col-xs-6 col-md-2">Phone</th>
+                <th role="columnheader" class="col-xs-6 col-md-2">Address1</th>
+                <th role="columnheader" class="col-xs-6 col-md-2">Address2</th>
+                <th role="columnheader" class="col-xs-6 col-md-2">City</th>
+                <th role="columnheader" class="col-xs-6 col-md-2">Occupation</th>
+            </tr>
+        </thead>
+        <tbody role="rowgroup">
+            <tr role="row" class="d-flex">
+                <td role="cell" class="col-xs-6 col-md-2">Tiger Nixon</td>
+                <td role="cell" class="col-xs-6 col-md-2">086 5423978</td>
+                <td role="cell" class="col-xs-6 col-md-2">32 Adler Grove</td>
+                <td role="cell" class="col-xs-6 col-md-2">George Street West</td>
+                <td role="cell" class="col-xs-6 col-md-2">Edinburgh</td>
+                <td role="cell" class="col-xs-6 col-md-2">System Architect</td>
+            </tr>
+            <tr role="row" class="d-flex">
+                <td role="cell">Garrett Winters</td>
+                <td role="cell">Accountant</td>
+                <td role="cell">Tokyo</td>
+                <td role="cell">63</td>
+                <td role="cell">2011/07/25</td>
+                <td role="cell">$170,750</td>
+            </tr>
+            <tr role="row" class="d-flex">
+                <td role="cell">Ashton Cox</td>
+                <td role="cell">Junior Technical Author</td>
+                <td role="cell">San Francisco</td>
+                <td role="cell">66</td>
+                <td role="cell">2009/01/12</td>
+                <td role="cell">$86,000</td>
+            </tr>
+            <tr role="row" class="d-flex">
+                <td role="cell">Cedric Kelly</td>
+                <td role="cell">Senior Javascript Developer</td>
+                <td role="cell">Edinburgh</td>
+                <td role="cell">22</td>
+                <td role="cell">2012/03/29</td>
+                <td role="cell">$433,060</td>
+            </tr>
+            <tr role="row" class="d-flex">
+                <td role="cell">Airi Satou</td>
+                <td role="cell">Accountant</td>
+                <td role="cell">Tokyo</td>
+                <td role="cell">33</td>
+                <td role="cell">2008/11/28</td>
+                <td role="cell">$162,700</td>
+            </tr>
+            <tr role="row" class="d-flex">
+                <td role="cell">Brielle Williamson</td>
+                <td role="cell">Integration Specialist</td>
+                <td role="cell">New York</td>
+                <td role="cell">61</td>
+                <td role="cell">2012/12/02</td>
+                <td role="cell">$372,000</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr class="d-flex">
+                <th role="columnheader">Name</th>
+                <th role="columnheader">Phone</th>
+                <th role="columnheader">Address1</th>
+                <th role="columnheader">Address2</th>
+                <th role="columnheader">City</th>
+                <th role="columnheader">Occupation</th>
+            </tr>
+        </tfoot>
+    </table>
+</div> -->

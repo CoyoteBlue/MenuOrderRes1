@@ -1,0 +1,15 @@
+/* on-screen styles */
+@media screen {
+
+}
+
+/* print styles */
+@media print {
+
+}
+@page {
+/*  margin: 2cm;
+  color:#ff0000;
+  background-color: lightblue; */
+
+}

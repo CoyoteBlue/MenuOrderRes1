@@ -1,0 +1,50 @@
+<button class="btn btn-primary" onclick="printData()">Print</button>
+<br /> <br />
+
+<div class="billcontainer" style="color:#555;" id="printTable">
+  <p class="help">
+    Please review your bill and pay </p>
+  <div class="box card-panel z-depth-3">
+    <div class="merchant">
+<!--      <img id="crickets" src="http://ishtyaqhabib.com/assets/images/forcodepen/cricketsCafe.png" /> -->
+      <h5 class="center-align">Bello Italiano</h5>
+
+    <p><app-date></app-date></p>
+      <p>Customer: John Smith</p>
+    </div>
+    <div class="invoice">
+      <table class="highlight table-bordered">
+        <thead>
+          <tr>
+            <th>QTY</th>
+            <th>ITEM</th>
+            <th class="right-align">PRICE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2</td>
+            <td>Large Mocha Latte</td>
+            <td class="right-align">$4.25</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Banana Nut Muffin</td>
+            <td class="right-align">$2.00</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="right-align">Tax</td>
+            <td class="right-align">$0.50</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="right-align bold">Total</td>
+            <td class="right-align bold">$6.75</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br />
+<!-- https://codepen.io/TheLarkInn/pen/EKEdgZ -->
+<!-- https://stackoverflow.com/questions/10088890/print-a-table-from-an-html-page -->

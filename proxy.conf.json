@@ -1,0 +1,5 @@
+{
+ "/customers": {"target": "http://localhost:3000","secure": false},
+ "/menu": {"target": "http://localhost:3000","secure": false},
+ "/billing": {"target": "http://localhost:3000","secure": false}
+}

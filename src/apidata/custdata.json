@@ -1,0 +1,52 @@
+[{
+    "id": 1,
+    "gender": "male",
+    "name": "Charles Smith",
+    "address1": "4 The Grove",
+    "address2": "Blanchardstown West",
+    "city": "Dublin",
+    "occupation": "Accountant",
+    "phone": "087 2645985"
+  },
+  {
+    "id": 2,
+    "gender": "male",
+    "name": "John Matthews",
+    "address1": "18 Roheen Drive",
+    "address2": "Blackrock",
+    "city": "Dublin",
+    "occupation": "Doctor",
+    "phone": "086 7265985"
+  },
+  {
+    "id": 3,
+    "gender": "female",
+    "name": "Melissa Brown",
+    "address1": "32 Waterfall Avenue",
+    "address2": "Malahide",
+    "city": "Dublin",
+    "occupation": "Physiotherapist",
+    "phone": "087 6463258"
+  },
+  {
+    "id": 4,
+    "gender": "female",
+    "name": "Kevin Delany",
+    "address1": "22 Riverside Drive",
+    "address2": "Clontarf",
+    "city": "Dublin",
+    "occupation": "Builder",
+    "phone": "087 2645985"
+  },
+  {
+    "id": 5,
+    "gender": "male",
+    "name": "Trevor Williamson",
+    "address1": "Belview Appartment 14",
+    "address2": "Stephens Green",
+    "city": "Dublin",
+    "occupation": "Office Admin",
+    "phone": "086 6921148"
+  }
+
+]

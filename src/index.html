@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ang6boot6</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Damion|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css" rel="stylesheet">
+    <link href="/assets/css/print.css" rel="stylesheet" type="text/css" media="print"/>
+
+    <style>
+    @page { size: 58mm 100mm }
+/*    @media print {
+  * {
+    display: none;
+  }
+  #printableTable {
+    display: block;
+  }
+} */
+    </style>
+</head>
+
+<body>
+    <app-root></app-root>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+                var item_num = $('nav li').length + 1;
+                var btn_state = true;
+
+                $('nav li').hover(function() {
+                    $(this).addClass('hover');
+                  },
+
+                function () {
+                    $(this).removeClass('hover');
+                    });
+
+                $('nav li').on('click', function () {
+                  if (btn_state) {
+                    btn_state = !btn_state;
+                    $('nav li').removeClass('currentPage');
+                    $(this).addClass('currentPage');
+
+                    var i = $('nav li').index(this);
+                    $('article').removeClass('show');
+                    $('article').addClass('hide');
+                    $('article').eq(i).addClass('show');
+
+                    setTimeout(function () {
+                        btn_state = !btn_state;
+                      }, 500);
+                }
+                });
+
+              });
+</script>
+
+<script type="text/javascript">
+function myFunction() {
+  var x = document.getElementById('select_id').selectedIndex;
+  /* alert(document.getElementsByTagName('option')[x].value); */
+  console.log(document.getElementsByTagName('option')[x].value);
+  var sel = document.getElementById('select_id');
+  var opt = sel.options[sel.selectedIndex];
+/*  console.log(opt.value);
+  console.log(opt.text); */
+  /*  console.log($('').val()); */
+  /*  console.log(value()); */
+}
+</script>
+    <!--  <script type="text/javascript">
+$('nav .navbar-nav a').on('click', function () {
+  $('nav .navbar-nav').find('li.active').removeClass('active');
+  $(this).parent('li').addClass('active');
+});
+  </script> -->
+<!-- Print Bill -->
+<script type="text/javascript">
+function printData()
+ {
+  var divToPrint = document.getElementById('printTable');
+  newWin = window.open('');
+  newWin.document.write(divToPrint.outerHTML);
+  newWin.print();
+  newWin.close();
+}
+
+$('button').on('click', function () {
+  printData();
+});
+</script>
+</body>
+
+</html>

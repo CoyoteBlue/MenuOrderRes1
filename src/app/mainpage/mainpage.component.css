@@ -1,0 +1,129 @@
+div#maincore.container-fluid{
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 100%;
+  padding:1em;
+  color: #222;
+  border-radius: 10px;
+}
+h4.gradtext {
+/*  font:54px 'Open Sans', 'Helvetica', Arial, sans-serif; */
+    font-family: "Damion", sans-serif;
+font-size: 5em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#370906), to(#0f1c06));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-filter: drop-shadow(2px 2px #333);
+          filter: drop-shadow(2px 2px #333);
+}
+h5.gradtext {
+/*  font:54px 'Open Sans', 'Helvetica', Arial, sans-serif; */
+    font-family: "Damion", sans-serif;
+font-size: 3em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#370906), to(#0f1c06));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-filter: drop-shadow(2px 2px #333);
+          filter: drop-shadow(2px 2px #333);
+}
+.flexrow{
+  display: flex;
+  flex-wrap: wrap;
+/*  flex-flow: row wrap; */
+  justify-content: center;
+  align-content: center;
+}
+.probuttonleft{
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 100%;
+  padding:1em;
+  color: #222;
+  border-radius: 10px;
+  flex: 0 1 calc(50% - 10px);
+  position: relative;
+  max-width:100%;
+  font-family: Roboto;
+  font-size: 2em;
+  border: 1px solid #333;
+  color: #000;
+}
+.probuttonright{
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 100%;
+  padding:1em;
+  color: #222;
+  border-radius: 10px;
+  flex: 0 1 calc(50% - 10px);
+  position: relative;
+  max-width:100%;
+  font-family: Roboto;
+  font-size: 2em;
+  border: 1px solid #333;
+  color: #000;
+}
+@media (max-width: 600px) {
+  .probuttonleft{
+    width:100%;
+    flex-wrap: wrap;
+  }
+  .probuttonright{
+    width:100%;
+    flex-wrap: wrap;
+  }
+}
+
+ul.list {
+    margin-left: -40px;
+}
+/*Flex items*/
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.list a{
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 5px;
+    color: #000;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: Roboto;
+    font-weight: 700;
+}
+.list
+.list-item {
+	display: flex;
+  padding: 5em;
+	width: 100%;
+}
+.list-content {
+	background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+	width: 100%;
+}
+.list-content p {
+	flex: 1 0 auto;
+  width: 90%;
+  padding:25px;
+}
+div.list p{
+/*padding: 2em;
+width: 100px; */
+}
+@media all and (min-width: 40em) {
+  .list-item {
+    width: 50%;
+  }
+}
+@media all and (min-width: 60em) {
+  .list-item {
+    width: 33.33%;
+  }
+}
+/*
+http://www.lottejackson.com/learning/an-equal-height-grid-using-flexbox
+
+https://codepen.io/lottejackson/pen/PwvjPj
+*/

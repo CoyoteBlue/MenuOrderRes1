@@ -1,0 +1,74 @@
+<div>
+    <!--  <script type="text/javascript">
+  $('#button1').click(function () {
+    console.log(' value: ' + $('#select_id :selected').val());
+    console.log(' text: ' + $('#select_id :selected').text());
+  });
+</script> -->
+
+
+    <select name="" id="select_id"> <!-- onclick="Function()" -->
+    <option value="" disabled>Choose Menu item</option>
+    <option  value="{{posts.id}} : {{posts.title}} : {{posts.price}}" *ngFor="let posts of posts">{{posts.id}} : {{posts.title}} : {{posts.price}}</option>
+  </select>
+    <button type="button" onclick="myFunction()">Add</button>
+    <!-- id="button1"  value="Click!" -->
+
+    <br />
+    <!--    <ul class="menublock"> 
+        <li *ngFor="let posts of posts;  let i = index"> -->
+    <!--  <p> Menu Type...{{posts.type}}</p> -->
+    <!--            <h5 class="Menutitle">{{posts.title}}</h5>
+            <p class="Menudesc"> {{posts.description}}</p>
+            <p style="color:#fff;">{{i}}</p>
+        </li>
+    </ul>
+
+    <br /> -->
+    <br />
+
+</div>
+<div class="cont-content">
+    <h4 class="text-center">Menu</h4>
+    <h3 class="Menutype">Starters</h3>
+    <ul class="menublock">
+        <!-- class="blog" -->
+        <li *ngFor="let posts of posts | starterfilter: 'type:starter' ">
+            <!--      <div *ngFor="let hero of (heroes | flyingHeroes)"> Example-->
+            <!-- class="blogposts" -->
+            <br />
+            <!--  <p> Menu Type...{{posts.type}}</p> -->
+            <h5 class="Menutitle">{{posts.title}} <span class="price">{{posts.price | currency:'EUR':true }}</span></h5>
+            <p class="Menudesc"> {{posts.description}}</p>
+        </li>
+    </ul>
+
+    <br />
+
+    <h3 class="Menutype">Main Courses</h3>
+    <ul class="menublock">
+        <!-- class="blog" -->
+        <li *ngFor="let posts of posts | mainfilter: 'type:main' ">
+            <!-- class="blogposts" -->
+            <br />
+            <!--  <p> Menu Type...{{posts.type}}</p>-->
+            <h5 class="Menutitle">{{posts.title}} <span class="price">{{posts.price | currency:'EUR':true }}</span></h5>
+            <p class="Menudesc">{{posts.description}}</p>
+        </li>
+    </ul>
+
+    <br />
+
+    <h3 class="Menutype">Desserts</h3>
+    <ul class="menublock">
+        <!-- class="blog" -->
+        <li *ngFor="let posts of posts | dessertfilter: 'type:dessert' ">
+            <!-- class="blogposts" -->
+            <br />
+            <!--  <p> Menu Type...{{posts.type}}</p>-->
+            <h5 class="Menutitle">{{posts.title}} <span class="price">{{posts.price | currency:'EUR': true }}</span></h5>
+            <p class="Menudesc">{{posts.description}}</p>
+        </li>
+    </ul>
+</div>
+<!-- End cont-content-->
